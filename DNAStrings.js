@@ -17,22 +17,23 @@
 
 // QUICK NOTES: 
 // A - T compliments (A replaced by T) A => T
+// T - A compliments (T replaced by A) T => A
+// G - C compliments (G replaced by C) G => G
 // C - G compliments (C replaced by G) C => G
 
 // YOUR PSEUDOCODE GOES HERE
+// declare new empty string
 // for loop over 'string'
-  // if string[i] === a => 't'
-  // if string[i] === t => 'a'
-  // if string[i] === g => 'c'
-  // if string[i] === c => 'g'
+  // if string[i] === 'A' => 'T'
+  // if string[i] === 'T' => 'A'
+  // if string[i] === 'G' => 'C'
+  // if string[i] === 'C' => 'G'
+// Return newString
 
   let dnaString = 'ATTGC' // output should be 'TAACG'
-
-
-  // A => t
-  // T => a
   
   const dnaTransform = string => {
+      // declaring a new variable here to start stacking in letters 
       let newString = ""
       for (let i = 0; i < string.length; i++) {
           if (string[i] === 'A') {
