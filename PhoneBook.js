@@ -49,9 +49,10 @@ const phoneBook = (input, mapped) => {
     }
     console.log('hash =', hash);
     
-    for (let i = 0; i < mapped.length; i++) {
-        console.log(mapped);
-    }
+    // for (let i = 0; i < mapped.length; i++) {
+    //     console.log(mapped);
+    // }
     
 }
-console.log(phoneBook([{sam:11111111}, {tom:22222222}, {harry:33333333}]))
+// console.log(phoneBook([{sam:11111111}, {tom:22222222}, {harry:33333333}]))
+phoneBook(['sam', 'ed', 'harry'])
