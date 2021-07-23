@@ -20,7 +20,7 @@ const findLongestWord = (string) => {
     // set variable to 0 and replace it when conditional is met
     let longestWord = 0;
 
-    console.log(words)
+    // console.log(words)
     for (let i = 0; i < words.length; i++) { // this is looping over the WORDS array from split(), not the parameter!!!!
         if (words[i].length > longestWord) {
             // saving over the old value each time if conditional is met. is new value bigger than the last one?
