@@ -21,18 +21,41 @@ For loop over arr1
 //Return arr2
 */
 
-const findMissingNums = (arr1,arr2) => {
-    // console.table(arr1)
-    // console.table(arr2)
-  for (let i = 0; i < arr1.length; i++) {
-    if (!arr2.includes(arr1[i]) ) {
-      // console.log(arr1[i])
-      arr2.push(arr1[i])
-    }
+
+
+
+
+const missingNums = (arr1, arr2) => {
+  // console.log(arr1);
+  // console.log(arr2);
+
+  for (let i = 0; i < arr2.length; i++) {
+    // console.log(arr1[i]);
+    if (!arr1.includes(arr2[i]))
+    arr2.push(arr1[i])
   }
-      // console.log(arr2)
-      return arr2
-  }
-  findMissingNums([0,1,2,3,4,5,6,7,8,9], [2,3,7,9])
-  // console.log('findMissingNums([0,1,2,3,4,5,6,7,8,9], [2,3,7,9])', findMissingNums([0,1,2,3,4,5,6,7,8,9], [2,3,7,9]))
+  console.log(arr2.length);
+  return arr2
+
+}
+console.log(missingNums([1, 4, 6, 234, 5, 74], [1, 876, 234, 56, 263]));
+
+
+
+
+
+// const findMissingNums = (arr1,arr2) => {
+//     // console.table(arr1)
+//     // console.table(arr2)
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (!arr2.includes(arr1[i]) ) {
+//       // console.log(arr1[i])
+//       arr2.push(arr1[i])
+//     }
+//   }
+//       // console.log(arr2)
+//       return arr2
+//   }
+//   findMissingNums([0,1,2,3,4,5,6,7,8,9], [2,3,7,9])
+//   // console.log('findMissingNums([0,1,2,3,4,5,6,7,8,9], [2,3,7,9])', findMissingNums([0,1,2,3,4,5,6,7,8,9], [2,3,7,9]))
   
